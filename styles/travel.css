@@ -9,7 +9,9 @@
     font-family: 'Mulish', sans-serif;
     margin:0;
     padding:0;
-  } 
+  }  
+
+ 
 
 .banner-part
 {  
@@ -99,11 +101,87 @@ font-size: 1rem;
 font-weight: 700;
 border:none;
 } 
+ .popular-tours
+ { 
+    margin-top:100px;
+    margin-left:90px;
+    margin-right:80px;
+    display:flex;
+    justify-content: space-evenly;
+    
+ } 
 
+
+  
+ .tour-title
+ {
+    color: #131318;
+    font-size: 40px;
+    font-weight: 800;
+    padding-bottom:24px;
+    margin-left:20px;
+ }  
+
+
+ .tour-description
+ {
+    width: 577px;
+    margin-left:20px;
+
+
+ }
+ .tour-description, .tour-lists
+ {
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 16px;
+  
+    font-weight: 400;
+    padding-bottom:24px;
+ } 
+
+ .tour-lists
+ {
+   width: 525px;
+  
+ } 
+
+ .tour-lists li
+ {
+    margin-bottom:20px;
+    margin-left:40px;
+ } 
+
+ .tour-conclusion
+ {
+    color: #5A5A5D;
+    font-size: 16px;
+    font-weight: 400;
+    width: 530px;
+    margin-left:20px;
+ }  
+
+ .popular-tour-description button
+ { 
+    margin-top:20px;
+    width: 174px;
+    height: 52px;
+    margin-left:20px;
+ }
+ .tour-image
+{
+    width: 540px;
+    height: 550px;
+    border-radius: 16px;
+    margin-top:30px;
+}
 /* Responsive styles for mobile */
 
 @media screen and (max-width:600px) {
-    
+  html,
+  body{
+    width:100%;
+    overflow-x: hidden;
+  }  
     
 .banner-part
 {  
@@ -118,7 +196,7 @@ border:none;
       background-repeat: no-repeat;
       border-radius: 16px;
       text-align:center;
-      width: 335px;
+      width: 345px;
       height: 483px;
       color: #FFF;
     } 
@@ -154,6 +232,43 @@ border:none;
     .select-option, .btn-primary
     {
         width:265px;
+    }  
+
+    /* popular tour */
+    .popular-tours
+    {
+        flex-direction: column;
+        margin-left:20px;
+        margin-right:25px;
+        
     } 
+    .tour-title{
+        font-size: 20px;
+      
+    } 
+    .tour-description, .tour-conclusion
+    {
+        width: 335px;
+        font-size:16px;
+    } 
+
+    .tour-lists li
+    {
+       width: 335px;
+       font-size: 16px;
+       margin-left:30px;
+
+    }  
+    .popular-tour-description button
+    {
+        width: 174px;
+        height: 52px;
+        margin-left:20px;
+    }
+    .tour-image
+    {
+        width: 345px;
+        height: 342px;
+    }
 
 }
