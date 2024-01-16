@@ -37,13 +37,13 @@
   .banner-title
   {
     
-    font-size: 4rem;
+    font-size: 64px;
     font-weight: 800;
     padding:100px 287px 0;
   } 
   .banner-description
   {
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 400;
     width: 676px;
     margin:0 247px;
@@ -97,7 +97,7 @@ border-radius: 8px;
 background: #FF5400;
  color: #FFF;
 text-align: center;
-font-size: 1rem;
+font-size: 16px;
 font-weight: 700;
 border:none;
 } 
@@ -173,13 +173,77 @@ border:none;
     height: 550px;
     border-radius: 16px;
     margin-top:30px;
-}
-/* Responsive styles for mobile */
+} 
+ /* destination */
+.choose-destination
+{
+    margin:100px 120px 0;
+ 
+} 
 
+.destination-title
+{
+    text-align:center;
+    color: #131318;
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom:24px;
+}
+
+.destination-description
+{
+    width: 643px;
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left:300px;
+    margin-right:300px;
+    margin-bottom:30px;
+
+
+
+}
+
+.row img
+{
+    width:100%;
+    height:100%;
+} 
+
+.row
+{
+    height:400px;
+    display:flex;
+    gap:24px;
+    margin-bottom:24px;
+} 
+.destination-each-image
+{
+    position:relative;
+    text-align: center;
+    color: white;
+}
+    
+
+.destination-img-name
+{
+    position: absolute;
+    color: #FFF;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 28px;
+    font-weight: 800;
+    
+}
 @media screen and (max-width:600px) {
   html,
   body{
     width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
     overflow-x: hidden;
   }  
     
@@ -254,9 +318,10 @@ border:none;
 
     .tour-lists li
     {
-       width: 335px;
+       width: 330px;
        font-size: 16px;
        margin-left:30px;
+       margin-right:10px;
 
     }  
     .popular-tour-description button
@@ -269,6 +334,48 @@ border:none;
     {
         width: 345px;
         height: 342px;
-    }
+    }  
 
+    .choose-destination
+    {
+        margin:24px 20px;
+    }
+    .destination-title
+    {
+        font-size: 20px;
+        width:239px;
+        text-align: center;
+        margin-left:50px;
+    }  
+.destination-description
+{
+    width: 309px;
+    text-align:center;
+    font-size: 14px;
+    margin-left:10px;
+    margin-right:10px;
+}
+ 
+
+     .row img 
+     {
+           width: 335px;
+           height: 176px;
+           /* border-radius: 16px; */
+           /* margin:20px 25px; */
+
+     }
+    .row
+    {
+        flex-direction:column;
+        gap:16px;
+        margin-bottom:16px;
+      
+    }  
+
+    .destination-img-name
+    {
+        font-size: 20px;
+
+    }
 }
