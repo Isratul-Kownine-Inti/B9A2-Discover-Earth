@@ -11,7 +11,83 @@
     padding:0;
   }  
 
- 
+  /* NavBar style */
+ .nav-bar
+ {
+    margin-left: 185px;
+    margin-right:140px;
+    display: flex;
+    justify-content: space-between;
+    position:relative;
+ } 
+
+.check-button
+{
+    font-size:30px;
+    color:var(--Dark-02, #424247);
+   cursor:pointer;
+   display:none;
+} 
+
+
+  .nav-title
+  { 
+    margin-top:50px;
+    display:flex;
+    justify-content: space-evenly;
+
+  } 
+  .nav-title h3{
+    color: #131318;
+    font-size: 36px;
+    font-weight: 800;
+    padding-left: 10px;
+  } 
+
+  #earth
+  {
+    
+    color: #FF5400;
+    
+  } 
+
+  .nav-title img
+  {
+    width: 48px;
+    height: 56.008px;
+  }
+ .nav-bar>ul
+ {   
+    margin-top:45px;
+    display:flex;
+    padding: 10px 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+
+ } 
+ .nav-bar li
+ {
+    list-style: none;
+    margin-right:30px;
+   
+ }  
+
+ .nav-bar li>a
+ {
+    text-decoration: none;
+    color: var(--Dark-02, #424247);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+ } 
+
+
+ #home
+ {
+    color: #FF5400;
+
+ } 
 
 .banner-part
 {  
@@ -40,6 +116,7 @@
     font-size: 64px;
     font-weight: 800;
     padding:100px 287px 0;
+    margin-bottom:10px;
   } 
   .banner-description
   {
@@ -49,14 +126,7 @@
     margin:0 247px;
 
   } 
-.banner-input
-{ 
 
-    display:flex;
-    padding: 16px;
-    align-items: flex-start;
-    gap: 24px;
-}  
 
 .banner-input
 {  
@@ -64,7 +134,7 @@
     padding: 16px;
     align-items: flex-start;
     gap: 24px;
-    margin-top:30px;
+    margin-top:50px;
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.30);
 }
@@ -246,7 +316,47 @@ border:none;
     padding:0;
     overflow-x: hidden;
   }   */
-    
+  /* navbar   */
+.nav-bar{
+    flex-direction:column;
+    align-items:center;
+
+} 
+
+.nav-bar ul 
+{
+    display: none;
+}  
+
+.nav-title
+{
+    font-size: 18.543px;
+    font-weight: 600;
+    width: 375px;
+    height: 64px;
+    padding-left:1.2px;
+    justify-content:flex-start;
+
+}  
+.nav-title img
+{
+    width: 25.724px;
+    height: 30.516px;
+    margin-top:5px;
+}
+
+
+
+.check-button
+{
+    display:inline;
+    width: 24px;
+    height: 24px;
+}
+
+
+
+
 .banner-part
 {  
     margin-top:20px;
